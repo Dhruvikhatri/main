@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Input, Table } from "antd";
+import { Button, Input } from "antd";
 import './style.scss';
 const ToDoListForm = () => {
     const [tasks, setTasks] = useState([]);
@@ -42,8 +42,6 @@ const ToDoListForm = () => {
             })
         );
     }
-
-    const columns = ['completion box', 'TaskName']
     return (
         <div className="todo-list-container">
             <h1>Todo List</h1>
